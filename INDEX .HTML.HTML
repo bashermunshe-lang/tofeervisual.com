@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOFEER VISUAL | Creative Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080b16;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #101629;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #00e5ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #00e5ff;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: radial-gradient(circle, #142d50, #080b16 70%);
+}
+
+.hero h1 {
+    font-size: clamp(42px, 8vw, 75px);
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #00e5ff;
+}
+
+.hero p {
+    color: #c5cbd8;
+    font-size: 18px;
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    background: #00d9ff;
+    color: #080b16;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+section {
+    padding: 85px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #00e5ff;
+}
+
+.about {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    color: #c5cbd8;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #111a2d;
+    padding: 30px 22px;
+    border: 1px solid #20334e;
+    border-radius: 15px;
+    text-align: center;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #00e5ff;
+}
+
+.card h3 {
+    color: #00e5ff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #b9c2d3;
+    line-height: 1.7;
+}
+
+.skills {
+    max-width: 700px;
+    margin: auto;
+}
+
+.skill {
+    margin-bottom: 22px;
+}
+
+.skill p {
+    margin-bottom: 8px;
+}
+
+.bar {
+    background: #263248;
+    height: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #00e5ff;
+    border-radius: 20px;
+}
+
+.contact {
+    text-align: center;
+    background: #101629;
+}
+
+.contact p {
+    color: #c5cbd8;
+    line-height: 2;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #050811;
+    color: #8995aa;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">TOFEER VISUAL</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>WELCOME TO <span>TOFEER VISUAL</span></h1>
+    <p>
+        Creative Visual Designer | AI Video Creator |
+        Digital Content Creator. Turning creative ideas
+        into amazing digital experiences.
+    </p>
+    <a href="#projects" class="btn">EXPLORE MY WORK</a>
+</section>
+
+<section id="about">
+    <h2 class="section-title">ABOUT ME</h2>
+    <div class="about">
+        <p>
+            Welcome to TOFEER VISUAL! I am a creative digital
+            creator passionate about visual storytelling,
+            AI-powered videos, graphic design and modern
+            digital experiences. My mission is to turn
+            imagination into reality through creativity
+            and technology.
+        </p>
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="section-title">MY SERVICES</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>AI Video Creation</h3>
+            <p>Professional AI-generated cinematic videos
+            and creative visual storytelling.</p>
+        </div>
+
+        <div class="card">
+            <h3>Video Editing</h3>
+            <p>Creative video editing, transitions,
+            effects and social media content.</p>
+        </div>
+
+        <div class="card">
+            <h3>Graphic Design</h3>
+            <p>Modern thumbnails, banners, logos
+            and creative graphics.</p>
+        </div>
+
+        <div class="card">
+            <h3>Social Media Content</h3>
+            <p>Engaging digital content for Facebook,
+            YouTube, Instagram and other platforms.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">MY PROJECTS</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>AI Cinematic Videos</h3>
+            <p>Explore my AI-powered cinematic creations.</p>
+        </div>
+
+        <div class="card">
+            <h3>Wildlife Videos</h3>
+            <p>Realistic animal and nature documentary projects.</p>
+        </div>
+
+        <div class="card">
+            <h3>Creative Designs</h3>
+            <p>Unique visual designs and digital artwork.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">MY SKILLS</h2>
+    <div class="skills">
+
+        <div class="skill">
+            <p>AI Video Creation</p>
+            <div class="bar"><div class="progress" style="width:90%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>Video Editing</p>
+            <div class="bar"><div class="progress" style="width:85%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>Graphic Design</p>
+            <div class="bar"><div class="progress" style="width:80%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>Content Creation</p>
+            <div class="bar"><div class="progress" style="width:95%"></div></div>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">LET'S WORK TOGETHER</h2>
+    <p>Have a creative project in mind? Let's connect!</p>
+
+    <!-- Replace with your own email and WhatsApp number -->
+    <a href="mailto:your@email.com" class="btn">CONTACT ME</a>
+</section>
+
+<footer>
+    <p>© 2026 TOFEER VISUAL. All Rights Reserved.</p>
+    <p>Designed with Creativity ❤️</p>
+</footer>
+
+</body>
+</html>
